@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    background: purple;
+    color: white;
+    padding: 10px;
+    font-family: cursive;
+    letter-spacing: 4px;
+    font-size: 4vw;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    color: purple;
+    padding: 10px;
+    font-family: "Courier New", Courier, monospace;
+    letter-spacing: 2px;
+    font-size: 3.2vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.elements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5px;
+    margin: 5px;
+}
+
+.elements .color-code {
+    width: 33vw;
+    height: 10vw;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+    font-family: cursive;
+    letter-spacing: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.elements .color-code:hover {
+    transform: scale(0.9);
+}
+
+@media only screen and (max-width: 1996px) {
+    .elements .color-code {
+        width: 32.5vw;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .elements .color-code {
+        /* for 3 make it 32vw */
+        width: 48vw;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .elements .color-code {
+        width: 100%;
+    }
+}
+
+button.load-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 3vw;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button.load-more:hover {
+    transform: scale(0.9);
+}
